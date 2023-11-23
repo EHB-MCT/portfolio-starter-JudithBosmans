@@ -1,0 +1,65 @@
+# Contribution Guidelines
+
+Thank you for your interest in contributing to our project! To maintain the quality of the codebase and to facilitate effective collaboration, please follow these guidelines when contributing.
+
+## Getting Started
+
+1. **Fork the Repository**: Start by forking the repository to your GitHub account. This creates a copy for you to work on.
+
+2. **Clone the Forked Repository**: Clone the repository to your local machine. This will allow you to make changes to the code.
+
+    ```
+    git clone https://github.com/[your-username]/[repo-name].git
+    ```
+
+3. **Create a New Branch**: Before making any changes, create a new branch. Branch names should be descriptive and reflect the change you're making.
+
+    ```
+    git checkout -b feature/your-feature-name
+    ```
+
+## Making Changes
+
+1. **Make Your Changes**: Add your changes in your local repository. Be sure to keep your changes focused and limited to the scope of your feature or fix. Please commit them with a clear and concise message.
+
+2. **Commit Your Changes**: Commit your changes with a clear, descriptive commit message. Follow best practices for writing commit messages:
+
+    - Begin with a short summary (50 characters or less) of the changes made.
+    - Use the imperative mood in the summary line (e.g., "Fix bug in X", not "Fixed bug in X" or "Fixes bug in X").
+    - Optionally, follow the summary with a more detailed explanation.
+
+    Example:
+    ```
+    git add .
+    git commit -m "Add feature X to improve Y"
+    ```
+
+3. **Keep Your Branch Updated**: Regularly sync your branch with the development branch of the original repository to stay updated with changes and avoid merge conflicts.
+
+    ```
+    git fetch upstream
+    git rebase upstream/development
+    ```
+
+## Submitting Your Changes
+
+1. **Push Your Changes**: Push your changes to your forked repository.
+
+    ```
+    git push origin feature/your-feature-name
+    ```
+
+2. **Create a Pull Request**: Go to your forked repository on GitHub and click 'New pull request'. Select your branch and submit the pull request with a clear description of your changes and reference any relevant issues.
+
+## Review Process
+
+- After submitting your pull request, maintainers will review your changes. Be open to feedback and willing to make revisions if requested.
+
+- Maintainers will merge your changes into the main branch once they are approved.
+
+## Code of conduct
+
+Please review and adhere to our [CODE_OF_CONDUCT] to ensure a respectful and inclusive environement for all contributers.
+
+We appreciate your contributions to our project and look forward to collaborating with you!
+
