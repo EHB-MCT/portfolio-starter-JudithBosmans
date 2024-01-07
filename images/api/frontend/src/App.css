@@ -4,6 +4,24 @@ input {
   caret-color: red;
 }
 
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+.dragon-component {
+  flex: 1;
+  height: 60vh;
+}
+
+.request-component {
+  flex: 1;
+  margin-left: 20px;
+}
+
 body {
   margin: 0;
   width: 100vw;
@@ -11,17 +29,20 @@ body {
   background: #ecf0f3;
   display: flex;
   align-items: center;
-  text-align: center;
   justify-content: center;
+  text-align: center;
   place-items: center;
   overflow: hidden;
   font-family: poppins;
+
+  background: #ffffff;
+  background: radial-gradient(at center, #ffffff, #29530a);
 }
 
 .container {
   position: relative;
   width: 350px;
-  height: 500px;
+
   border-radius: 20px;
   padding: 40px;
   box-sizing: border-box;

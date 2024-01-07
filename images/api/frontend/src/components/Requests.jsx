@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../App.css";
 
 function Request() {
   const [email, setEmail] = useState("");
@@ -29,7 +30,7 @@ function Request() {
   };
 
   return (
-    <div className="container">
+    <div className="container" id="request-component">
       <div className="brand-title">MATCHA REVIEW</div>
       <form onSubmit={handleSubmit} className="inputs">
         <label>Leave a review on matcha</label>
