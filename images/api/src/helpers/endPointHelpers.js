@@ -12,12 +12,12 @@ Check name of new student on post
 @returns: false if no match, true if right type
 */
 
-function checkArtistName(name) {
+function checkMatchaRating(name) {
   if (
     name == null ||
-    name.length <= 1 ||
     typeof name !== "string" ||
-    name.length > 20
+    name.trim().length < 2 ||
+    name.trim().length > 20
   ) {
     return false;
   }
@@ -25,5 +25,5 @@ function checkArtistName(name) {
 }
 
 module.exports = {
-  checkArtistName,
+  checkMatchaRating,
 };
