@@ -1,7 +1,9 @@
 {
   "scripts": {
-    "start": "npm run migrate && nodemon src/index.js",
-    "test": "jest --watchAll",
+    "test-watch": "jest --watchAll --detectOpenHandles",
+    "test": "jest --detectOpenHandles",
+    "dev": "npx knex migrate:latest --cwd ./src/db && npx knex seed:run --cwd ./src/db && npm run test-watch",
+    "start": "npx knex migrate:latest --cwd ./src/db && npm run test && npm run test-watch",
     "migrate": "npx knex migrate:latest --cwd src/db"
   },
   "dependencies": {
