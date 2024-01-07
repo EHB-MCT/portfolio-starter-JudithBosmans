@@ -4,10 +4,9 @@
  */
 exports.up = function (knex) {
   return knex.schema
-    .createTable("artists", function (table) {
+    .createTable("matcha_reviews", function (table) {
       table.increments("id").primary();
       table.string("name").notNullable();
-      table.string("age");
     })
     .createTable("works", function (table) {
       table.increments("id").primary();
@@ -21,5 +20,7 @@ exports.up = function (knex) {
  * @returns { Promise<void> }
  */
 exports.down = function (knex) {
-  return knex.schema.dropTableIfExists("works").dropTableIfExists("artists");
+  return knex.schema
+    .dropTableIfExists("works")
+    .dropTableIfExists("matcha_reviews");
 };
